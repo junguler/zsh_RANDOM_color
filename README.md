@@ -183,3 +183,11 @@ the other benefit of having a variable in your prompt is you can just as easily 
 say i don't want to have square brakets in my prompt, lets change them to parentheses like this ``local l_l='('`` ``local l_l=')'``
 
 same thing applies for your color variables
+
+### acknowledgement
+this repo was made possible using these tools
+
+* [asciinema](https://docs.asciinema.org/) to record the terminal window
+* [agg](https://github.com/asciinema/agg) to convert asciinema output to gif files
+* [perplexity.ai](https://www.perplexity.ai/) to help me understand how $RANDOM works
+* [hyper](https://hyper.is/) my terminal emulator of choice
