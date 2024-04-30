@@ -30,7 +30,7 @@ as you probably know `%F{}` is to set colors in your prompt, `%f` will reset the
 PROMPT='%F{1}junguler%F{2}@%F{3}nowhere%f  '
 ```
 
-![](stuff/1-1.png)
+![](stuff/1-1.gif)
 
 using that same pattern we can use the built in '$RANDOM' variable to set a random color for each time you press inter or use a command in your shell
 
@@ -40,7 +40,7 @@ PROMPT='%F{$(($RANDOM%6+1))}junguler%F{$(($RANDOM%6+1))}@%F{$(($RANDOM%6+1))}now
 
 this will apply a random color between 1 and 6 each time, which will result in one of the following colors: red, green, yellow, blue, magenta or cyan
 
-![](stuff/1-2.png)
+![](stuff/1-2.gif)
 
 now that you know how easy it is to get things going you can apply the same method to all of the items in your prompt, note that you don't need to reset the color each time if the next item is also going to get it's own color, just at the end of your prompt or when you want a section of your prompt to be the default color
 
@@ -50,7 +50,7 @@ here as example of my own prompt including time, current working directory and t
 PROMPT='%F{$(($RANDOM%6+1))}%D{%H:%M} % %F{$(($RANDOM%6+1))}%1~ %F{$(($RANDOM%6+1))}%?%f '
 ```
 
-![](stuff/1-3.png)
+![](stuff/1-3.gif)
 
 looks cool but it's a little empty, so lets add some square brackets to make it look better and also give us a few more things to randomly color
 
@@ -58,7 +58,7 @@ looks cool but it's a little empty, so lets add some square brackets to make it 
 PROMPT='%F{$(($RANDOM%6+1))}[%F{$(($RANDOM%6+1))}%D{%H:%M}%F{$(($RANDOM%6+1))}] %F{$(($RANDOM%6+1))}[%F{$(($RANDOM%6+1))}%1~%F{$(($RANDOM%6+1))}] %F{$(($RANDOM%6+1))}[%F{$(($RANDOM%6+1))}%?%F{$(($RANDOM%6+1))}]%f '
 ```
 
-![](stuff/1-4.png)
+![](stuff/1-4.gif)
 
 ### what about 256 colors
 
@@ -72,7 +72,7 @@ you can't usually change how the colors 16-255 look unless you are on a terminal
 PROMPT='%F{$((RANDOM%215+16))}[%F{$((RANDOM%215+16))}%D{%H:%M}%F{$((RANDOM%215+16))}] %F{$((RANDOM%215+16))}[%F{$((RANDOM%215+16))}%1~%F{$((RANDOM%215+16))}] %F{$((RANDOM%215+16))}[%F{$((RANDOM%215+16))}%?%F{$((RANDOM%215+16))}]%f '
 ```
 
-![](stuff/2-1.png)
+![](stuff/2-1.gif)
 
 ### more control using ranges of colors
 too much randomness leads to ugly results as you can see from the above picture, so lets use ranges of colors to better control our prompts while still having the option of variety of colors to choose from
@@ -101,10 +101,10 @@ having learned how it works lets make some color palletes to use for our random 
 
 | theme | code | colors | image | 
 |---|---|---|---|
-| warm | `$((196+($RANDOM%6)*6))` | ![](stuff/196.png) ![](stuff/202.png) ![](stuff/208.png) ![](stuff/214.png) ![](stuff/220.png) ![](stuff/226.png) | ![](stuff/warm.png) |
-| cold | `$((93+($RANDOM%6)*6))` | ![](stuff/93.png) ![](stuff/99.png) ![](stuff/105.png) ![](stuff/111.png) ![](stuff/117.png) ![](stuff/123.png) | ![](stuff/cold.png) |
-| purple/green | `$((93+($RANDOM%6)*5))` | ![](stuff/93.png) ![](stuff/98.png) ![](stuff/103.png) ![](stuff/108.png) ![](stuff/113.png) ![](stuff/118.png) | ![](stuff/pur-to-gre.png) |
-| pink/yellow | `$((201+($RANDOM%6)*5))` | ![](stuff/201.png) ![](stuff/206.png) ![](stuff/211.png) ![](stuff/216.png) ![](stuff/221.png) ![](stuff/226.png) | ![](stuff/pin-to-yel.png) |
+| warm | `$((196+($RANDOM%6)*6))` | ![](stuff/196.png) ![](stuff/202.png) ![](stuff/208.png) ![](stuff/214.png) ![](stuff/220.png) ![](stuff/226.png) | ![](stuff/warm.gif) |
+| cold | `$((93+($RANDOM%6)*6))` | ![](stuff/93.png) ![](stuff/99.png) ![](stuff/105.png) ![](stuff/111.png) ![](stuff/117.png) ![](stuff/123.png) | ![](stuff/cold.gif) |
+| purple/green | `$((93+($RANDOM%6)*5))` | ![](stuff/93.png) ![](stuff/98.png) ![](stuff/103.png) ![](stuff/108.png) ![](stuff/113.png) ![](stuff/118.png) | ![](stuff/pur-to-gre.gif) |
+| pink/yellow | `$((201+($RANDOM%6)*5))` | ![](stuff/201.png) ![](stuff/206.png) ![](stuff/211.png) ![](stuff/216.png) ![](stuff/221.png) ![](stuff/226.png) | ![](stuff/pin-to-yel.gif) |
 
 ### multi color pallete prompt
 so far we decided on a color pallete and applied it to the whole of the prompt but because it's all modular it's really easy to have several color combinations at once
@@ -124,8 +124,6 @@ so far we decided on a color pallete and applied it to the whole of the prompt b
 PROMPT='%F{$(($RANDOM%6+46))}[%F{$(($RANDOM%6+46))}%D{%H:%M}%F{$(($RANDOM%6+46))}] %F{$(($RANDOM%6+196))}[%F{$(($RANDOM%6+196))}%1~%F{$(($RANDOM%6+196))}] %F{$((201+($RANDOM%6)*5))}[%F{$((201+($RANDOM%6)*5))}%?%F{$((201+($RANDOM%6)*5))}]%f '
 ```
 
-![](stuff/.png)
-
 ### background colors
 using the same methods we learned it's easy to apply a background color to your prompt using `$K{}` and `$k`
 
@@ -137,7 +135,7 @@ $(($RANDOM%7+232))
 
 which uses color numbers between 232 to 238
 
-![](stuff/background.png)
+![](stuff/background.gif)
 
 just make sure to keep the contrast level enough to have the prompt easily readable
 
