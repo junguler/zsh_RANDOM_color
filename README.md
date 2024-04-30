@@ -124,6 +124,8 @@ so far we decided on a color pallete and applied it to the whole of the prompt b
 PROMPT='%F{$(($RANDOM%6+46))}[%F{$(($RANDOM%6+46))}%D{%H:%M}%F{$(($RANDOM%6+46))}] %F{$(($RANDOM%6+196))}[%F{$(($RANDOM%6+196))}%1~%F{$(($RANDOM%6+196))}] %F{$((201+($RANDOM%6)*5))}[%F{$((201+($RANDOM%6)*5))}%?%F{$((201+($RANDOM%6)*5))}]%f '
 ```
 
+![](stuff/multi.gif)
+
 ### background colors
 using the same methods we learned it's easy to apply a background color to your prompt using `$K{}` and `$k`
 
