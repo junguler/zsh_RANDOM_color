@@ -111,20 +111,13 @@ so far we decided on a color pallete and applied it to the whole of the prompt b
 
 | code | colors | 
 |---|---|
-| $((RANDOM%6+46))
- | ![](stuff/46.png) ![](stuff/47.png) ![](stuff/48.png) ![](stuff/49.png) ![](stuff/50.png) ![](stuff/51.png) |
-| $((57+($RANDOM%6)*6))
- | ![](stuff/57.png) ![](stuff/63.png) ![](stuff/69.png) ![](stuff/75.png) ![](stuff/81.png) ![](stuff/87.png) |
-| $((93+($RANDOM%6)*6))
- | ![](stuff/93.png) ![](stuff/99.png) ![](stuff/105.png) ![](stuff/111.png) ![](stuff/117.png) ![](stuff/123.png) |
-| $((129+($RANDOM%6)*5))
- | ![](stuff/129.png) ![](stuff/134.png) ![](stuff/139.png) ![](stuff/144.png) ![](stuff/149.png) ![](stuff/154.png) |
-| $((RANDOM%6+196))
- | ![](stuff/196.png) ![](stuff/197.png) ![](stuff/198.png) ![](stuff/199.png) ![](stuff/200.png) ![](stuff/201.png) |
-| $((196+($RANDOM%6)*6))
- | ![](stuff/196.png) ![](stuff/202.png) ![](stuff/208.png) ![](stuff/214.png) ![](stuff/220.png) ![](stuff/226.png) |
-| $((201+($RANDOM%6)*5))
- | ![](stuff/201.png) ![](stuff/206.png) ![](stuff/211.png) ![](stuff/216.png) ![](stuff/221.png) ![](stuff/226.png) |
+| $((RANDOM%6+46)) | ![](stuff/46.png) ![](stuff/47.png) ![](stuff/48.png) ![](stuff/49.png) ![](stuff/50.png) ![](stuff/51.png) |
+| $((57+($RANDOM%6)*6)) | ![](stuff/57.png) ![](stuff/63.png) ![](stuff/69.png) ![](stuff/75.png) ![](stuff/81.png) ![](stuff/87.png) |
+| $((93+($RANDOM%6)*6)) | ![](stuff/93.png) ![](stuff/99.png) ![](stuff/105.png) ![](stuff/111.png) ![](stuff/117.png) ![](stuff/123.png) |
+| $((129+($RANDOM%6)*5)) | ![](stuff/129.png) ![](stuff/134.png) ![](stuff/139.png) ![](stuff/144.png) ![](stuff/149.png) ![](stuff/154.png) |
+| $((RANDOM%6+196)) | ![](stuff/196.png) ![](stuff/197.png) ![](stuff/198.png) ![](stuff/199.png) ![](stuff/200.png) ![](stuff/201.png) |
+| $((196+($RANDOM%6)*6)) | ![](stuff/196.png) ![](stuff/202.png) ![](stuff/208.png) ![](stuff/214.png) ![](stuff/220.png) ![](stuff/226.png) |
+| $((201+($RANDOM%6)*5)) | ![](stuff/201.png) ![](stuff/206.png) ![](stuff/211.png) ![](stuff/216.png) ![](stuff/221.png) ![](stuff/226.png) |
 
 
 ```
