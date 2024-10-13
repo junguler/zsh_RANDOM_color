@@ -10,6 +10,11 @@ lets also comment out the line about the prompt because we are making our own
 # ZSH_THEME="robbyrussell"
 ```
 
+alternatively if you don't want to bloat your zsh install with ohmyzsh add this line to your `.zshrc` to enable prompt substitution
+```
+setopt PROMPT_SUBST
+```
+
 ### my color pallete
 
 | number | hex | image | number | hex | image |
